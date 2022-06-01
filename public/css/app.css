@@ -887,6 +887,9 @@ select {
 .max-w-lg {
   max-width: 32rem;
 }
+.max-w-2xl {
+  max-width: 42rem;
+}
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -971,6 +974,13 @@ select {
 }
 .gap-6 {
   gap: 1.5rem;
+}
+.gap-y-10 {
+  row-gap: 2.5rem;
+}
+.gap-x-6 {
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
 }
 .space-x-1 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
@@ -1199,6 +1209,10 @@ select {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.object-center {
+  -o-object-position: center;
+     object-position: center;
+}
 .p-1 {
   padding: 0.25rem;
 }
@@ -1394,6 +1408,10 @@ select {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
 .font-medium {
   font-weight: 500;
 }
@@ -1498,6 +1516,10 @@ select {
 .text-red-600 {
   --tw-text-opacity: 1;
   color: rgb(220 38 38 / var(--tw-text-opacity));
+}
+.text-blue-800 {
+  --tw-text-opacity: 1;
+  color: rgb(30 64 175 / var(--tw-text-opacity));
 }
 .underline {
   -webkit-text-decoration-line: underline;
@@ -1852,6 +1874,9 @@ select {
 .disabled\:opacity-25:disabled {
   opacity: 0.25;
 }
+.group:hover .group-hover\:opacity-75 {
+  opacity: 0.75;
+}
 @media (prefers-color-scheme: dark) {
 
   .dark\:border-gray-600 {
@@ -2030,6 +2055,10 @@ select {
 
   .sm\:flex-1 {
     flex: 1 1 0%;
+  }
+
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .sm\:items-center {
@@ -2261,6 +2290,18 @@ select {
     height: 24rem;
   }
 
+  .lg\:h-80 {
+    height: 20rem;
+  }
+
+  .lg\:h-full {
+    height: 100%;
+  }
+
+  .lg\:w-full {
+    width: 100%;
+  }
+
   .lg\:max-w-7xl {
     max-width: 80rem;
   }
@@ -2271,6 +2312,10 @@ select {
 
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .lg\:content-center {
@@ -2364,6 +2409,11 @@ select {
 
   .xl\:gap-8 {
     gap: 2rem;
+  }
+
+  .xl\:gap-x-8 {
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
   }
 
   .xl\:text-center {

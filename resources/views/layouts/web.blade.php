@@ -20,7 +20,20 @@
     </head>
     <body class="font-sans antialiased">
 
-        @include('layouts.temp')
+        <div class="min-h-screen bg-gray-50">
+            <div class="relative overflow-hidden">
+
+                @include('../components/web/header-component')
+
+                <main>
+                    @yield('content')
+                </main>
+
+                @include('../components/web/footer-component')
+
+            </div>
+        </div>
+
 
         @stack('modals')
 
