@@ -87,7 +87,7 @@ class UserController extends Controller
         if($validator->fails())
         {
             return ResponseFormatter::error([
-                'error'     => $validator->error()
+                'error'     => $validator->errors()
             ], 'update photo profile fails', 401);
         }
 
